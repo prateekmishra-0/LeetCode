@@ -7,7 +7,7 @@ class Solution {
         for(int i = 1;i<n;i++){
             int pick = nums[i];
             if(i!=1) pick+=prev2;
-            int notPick = 0+prev;
+            int notPick = prev;
             curri = Math.max(pick,notPick);
             prev2 = prev;
             prev = curri;
